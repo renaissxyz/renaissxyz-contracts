@@ -1,0 +1,29 @@
+{
+  "../renaiss/lib/forge-std": {
+    "rev": "0768d9c08c085c79bb31d88683a78770764fec49"
+  },
+  "lib/forge-std": {
+    "tag": {
+      "name": "v1.10.0",
+      "rev": "8bbcf6e3f8f62f419e5429a0bd89331c85c37824"
+    }
+  },
+  "lib/openzeppelin-contracts": {
+    "tag": {
+      "name": "v4.4.1",
+      "rev": "6bd6b76d1156e20e45d1016f355d154141c7e5b9"
+    }
+  },
+  "lib/openzeppelin-contracts-upgradeable": {
+    "tag": {
+      "name": "v4.4.1",
+      "rev": "3ff38d850a4e8bcd377f559f750678734af50450"
+    }
+  },
+  "lib/solady": {
+    "tag": {
+      "name": "v0.1.26",
+      "rev": "acd959aa4bd04720d640bf4e6a5c71037510cc4b"
+    }
+  }
+}

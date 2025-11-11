@@ -1,0 +1,41 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+solc_version = "0.8.20"
+optimizer = true
+optimizer_runs = 200
+ffi = true
+# Script defaults
+broadcast = "broadcast"
+dotenv = true
+fs_permissions = [
+    { access = "read", path = "./script/config" },
+    { access = "read-write", path = "./deployments" },
+    { access = "read-write", path = "./test/utils" }
+]
+# Exclude problematic test files from OpenZeppelin libraries
+exclude = [
+    "lib/openzeppelin-contracts-upgradeable/test/**/*",
+    "lib/openzeppelin-contracts/test/**/*"
+]
+
+
+
+[rpc_endpoints]
+bnb_testnet = "${BNB_TESTNET_RPC_URL}"
+bnb_mainnet = "${BNB_MAINNET_RPC_URL}"
+
+# Coverage configuration
+[profile.default.coverage]
+# Only include src folder in coverage
+include = ["src/**/*"]
+# Exclude test and library files from coverage
+exclude = [
+    "test/**/*",
+    "script/**/*", 
+    "lib/**/*"
+]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

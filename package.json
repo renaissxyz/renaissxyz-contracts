@@ -1,0 +1,32 @@
+{
+  "name": "renaiss-contracts",
+  "version": "1.0.0",
+  "description": "Renaiss smart contracts built with Foundry",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "clean": "forge clean",
+    "fmt": "forge fmt",
+    "coverage": "forge coverage"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.10.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "solidity",
+    "foundry",
+    "smart-contracts",
+    "ethereum",
+    "xlayer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "viem": "^2.21.0"
+  }
+}

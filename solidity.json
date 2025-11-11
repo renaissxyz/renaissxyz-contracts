@@ -1,0 +1,18 @@
+{
+  "remappings": [
+    "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "forge-std/=lib/forge-std/src/",
+    "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/"
+  ],
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "outputSelection": {
+    "*": {
+      "*": ["abi", "devdoc", "userdoc", "evm.bytecode", "evm.deployedBytecode"]
+    }
+  },
+  "compilerVersion": "0.8.7"
+}

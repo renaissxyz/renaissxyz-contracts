@@ -1,0 +1,34 @@
+# These are some examples of commonly ignored file patterns.
+# You should customize this list as applicable to your project.
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+# Node artifact files
+node_modules/
+dist/
+
+.DS_Store
+foundry.lock
+
+# Log files
+*.log
+
+.env
+# Maven
+dist/
+cache/
+
+.vscode/
+out/build-info/
+
+# Ignore all broadcast files except run-latest.json
+broadcast/**/*.json
+!broadcast/**/run-latest.json
+
+# Ignore everything from out/
+out/
+typechain/
+.pnpm-store/
+
+circuits/setup/*.ptau
+circuits/setup/*.zkey
